@@ -59,8 +59,8 @@ public class Base {
 			capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, properties.getProperty("platformName"));
 			capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, properties.getProperty("deviceName"));
 			capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, properties.getProperty("automationName"));
-			capabilities.setCapability(MobileCapabilityType.APP,
-					System.getProperty("user.dir") + properties.getProperty("appPath"));
+			// capabilities.setCapability(MobileCapabilityType.APP,
+			// 		System.getProperty("user.dir") + properties.getProperty("appPath"));
 			capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, properties.getProperty("timeout"));
 			capabilities.setCapability("appium:autoAcceptAlerts", properties.getProperty("autoAcceptAlerts"));
 			capabilities.setCapability("appium:noReset", properties.getProperty("noReset"));
